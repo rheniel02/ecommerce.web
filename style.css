@@ -1,0 +1,110 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1E3A8A; /* Deep Blue Background */
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: white; /* White text for contrast */
+}
+
+/* Header */
+header {
+    background-color: #000;
+    color: white;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Products Section */
+#products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+    gap: 20px;
+}
+
+.product {
+    background: #f4f4f4; /* Light Gray for Contrast */
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 280px; /* Medium size */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: black;
+}
+
+.product:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.3);
+}
+
+/* 🔥 Medium-Sized Posters */
+.product img {
+    width: 100%;
+    height: 300px; /* Medium size */
+    object-fit: cover;
+    border-radius: 8px;
+    border: 3px solid black;
+}
+
+.product button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.product button:hover {
+    background-color: gray;
+    transform: scale(1.05);
+}
+
+/* Cart Section */
+#cart {
+    background: white;
+    padding: 15px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+    width: 50%;
+    text-align: left;
+    color: black;
+}
+
+#cart-items {
+    list-style: none;
+    padding: 0;
+}
+
+#cart-items li {
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Remove Button */
+.remove-btn {
+    background: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 6px;
+    font-size: 14px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.remove-btn:hover {
+    background: darkred;
+}
